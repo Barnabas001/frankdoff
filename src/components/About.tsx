@@ -57,7 +57,7 @@ export default function About() {
                   ["10+", "Years in business"],
                   ["500+", "Products stocked"],
                   ["1,000+", "Happy clients"],
-                  ["Lagos", "Based & serving Nigeria"],
+                  ["Ibadan", "Based & serving Nigeria"],
                 ].map(([v, l]) => (
                   <div
                     key={l}

@@ -87,7 +87,8 @@ export default function Services() {
               role: "IT Manager",
             },
             {
-              quote: "Best prices in Lagos, hands down. Will keep coming back.",
+              quote:
+                "Best prices in Ibadan, hands down. Will keep coming back.",
               name: "Aisha M.",
               role: "Small Business Owner",
             },

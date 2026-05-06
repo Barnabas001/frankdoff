@@ -30,7 +30,7 @@ export default function Footer() {
               style={{ color: "var(--text-secondary)" }}
             >
               Your trusted dealer for computers, accessories, phones, and office
-              equipment in Lagos, Nigeria.
+              equipment in Ibadan, Nigeria.
             </p>
             <p
               className="text-xs mt-4 font-semibold"
