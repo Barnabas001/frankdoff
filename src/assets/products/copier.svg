@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="cpGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0e4ee"/>
+      <stop offset="100%" stop-color="#b8bece"/>
+    </linearGradient>
+    <linearGradient id="cpPanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8cdd8"/>
+      <stop offset="100%" stop-color="#a8aeb8"/>
+    </linearGradient>
+    <filter id="cs"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000" flood-opacity="0.2"/></filter>
+  </defs>
+
+  <ellipse cx="195" cy="286" rx="145" ry="9" fill="#000" opacity="0.12"/>
+
+  <!-- Paper trays (bottom) -->
+  <rect x="60" y="230" width="270" height="18" rx="4" fill="#c8cdd6" filter="url(#cs)"/>
+  <rect x="62" y="228" width="266" height="4" rx="2" fill="#d8dde6"/>
+  <rect x="60" y="212" width="270" height="20" rx="4" fill="#d0d5e0" filter="url(#cs)"/>
+  <rect x="62" y="210" width="266" height="4" rx="2" fill="#dde2ea"/>
+  <!-- Tray labels -->
+  <rect x="290" y="216" width="30" height="5" rx="2" fill="#a0a8b8" opacity="0.7"/>
+  <rect x="290" y="232" width="30" height="5" rx="2" fill="#a0a8b8" opacity="0.7"/>
+  <rect x="290" y="248" width="30" height="5" rx="2" fill="#a0a8b8" opacity="0.6"/>
+  <!-- Tray handles -->
+  <rect x="72" y="219" width="50" height="3" rx="1.5" fill="#b0b8c8"/>
+  <rect x="72" y="235" width="50" height="3" rx="1.5" fill="#b0b8c8"/>
+
+  <!-- Main body -->
+  <rect x="55" y="60" width="280" height="160" rx="10" fill="url(#cpGrad)" filter="url(#cs)"/>
+
+  <!-- Top scanner lid -->
+  <rect x="55" y="35" width="280" height="30" rx="8 8 0 0" fill="url(#cpPanelGrad)" filter="url(#cs)"/>
+  <!-- Scanner glass strip -->
+  <rect x="65" y="42" width="200" height="16" rx="3" fill="#d0d5e0"/>
+  <rect x="68" y="45" width="194" height="10" rx="2" fill="#e8eaf0" opacity="0.6"/>
+  <!-- Scan lines -->
+  <rect x="70" y="47" width="190" height="1" rx="0.5" fill="#c8ccd8" opacity="0.5"/>
+  <rect x="70" y="50" width="190" height="1" rx="0.5" fill="#c8ccd8" opacity="0.4"/>
+  <rect x="70" y="53" width="190" height="1" rx="0.5" fill="#c8ccd8" opacity="0.3"/>
+
+  <!-- Control panel (right) -->
+  <rect x="260" y="38" width="65" height="24" rx="5" fill="#b8bece"/>
+  <!-- Touchscreen -->
+  <rect x="264" y="41" width="40" height="17" rx="3" fill="#0d1525"/>
+  <rect x="267" y="44" width="34" height="11" rx="2" fill="#1a2640"/>
+  <rect x="269" y="46" width="22" height="3" rx="1" fill="#1d7ef5" opacity="0.9"/>
+  <rect x="269" y="51" width="16" height="2.5" rx="1" fill="#22c55e" opacity="0.7"/>
+  <!-- Panel buttons -->
+  <circle cx="309" cy="45" r="3.5" fill="#22c55e" opacity="0.9"/>
+  <circle cx="309" cy="54" r="3.5" fill="#aab0be"/>
+  <rect x="316" y="42" width="5" height="3" rx="1" fill="#888"/>
+  <rect x="316" y="47" width="5" height="3" rx="1" fill="#888"/>
+  <rect x="316" y="52" width="5" height="3" rx="1" fill="#888"/>
+
+  <!-- Side document feeder -->
+  <rect x="55" y="35" width="12" height="100" rx="6 0 0 6" fill="#c0c6d4"/>
+
+  <!-- Output tray (top, paper out) -->
+  <rect x="65" y="65" width="200" height="8" rx="3" fill="#d8dde6"/>
+  <!-- Paper in output -->
+  <rect x="75" y="58" width="150" height="3" rx="1" fill="#fff" opacity="0.85"/>
+  <rect x="79" y="54" width="142" height="3" rx="1" fill="#f8f8f8" opacity="0.8"/>
+  <rect x="83" y="50" width="134" height="3" rx="1" fill="#f5f5f5" opacity="0.75"/>
+  <!-- Text on paper -->
+  <rect x="92" y="52" width="55" height="1.5" rx="1" fill="#1d7ef5" opacity="0.6"/>
+  <rect x="92" y="56" width="40" height="1.5" rx="1" fill="#333" opacity="0.3"/>
+
+  <!-- Paper input slot -->
+  <rect x="65" y="78" width="230" height="14" rx="4" fill="#c0c6d4"/>
+  <rect x="68" y="81" width="224" height="8" rx="3" fill="#aab2c0"/>
+  <rect x="72" y="83" width="215" height="2" rx="1" fill="#9aa0b0" opacity="0.6"/>
+  <rect x="72" y="87" width="215" height="2" rx="1" fill="#9aa0b0" opacity="0.5"/>
+
+  <!-- Mechanism visible strip -->
+  <rect x="65" y="96" width="230" height="20" rx="3" fill="#b8bec8"/>
+  <rect x="72" y="100" width="50" height="12" rx="2" fill="#1d7ef5" opacity="0.75"/>
+  <rect x="127" y="100" width="50" height="12" rx="2" fill="#ec4444" opacity="0.75"/>
+  <rect x="182" y="100" width="50" height="12" rx="2" fill="#F5C518" opacity="0.85"/>
+  <rect x="237" y="100" width="50" height="12" rx="2" fill="#222" opacity="0.65"/>
+  <!-- Cartridge labels -->
+  <rect x="76" y="104" width="20" height="4" rx="2" fill="#fff" opacity="0.4"/>
+  <rect x="131" y="104" width="20" height="4" rx="2" fill="#fff" opacity="0.4"/>
+  <rect x="186" y="104" width="20" height="4" rx="2" fill="#fff" opacity="0.4"/>
+  <rect x="241" y="104" width="20" height="4" rx="2" fill="#fff" opacity="0.4"/>
+
+  <!-- Front panel bottom -->
+  <rect x="65" y="120" width="230" height="55" rx="0 0 6 6" fill="#c8cdd6"/>
+  <!-- USB/ports area -->
+  <rect x="72" y="130" width="16" height="10" rx="2" fill="#9aa0b0"/>
+  <rect x="92" y="130" width="16" height="10" rx="2" fill="#9aa0b0"/>
+  <rect x="116" y="133" width="8" height="6" rx="1" fill="#7a8090"/>
+  <!-- SD card slot -->
+  <rect x="130" y="130" width="20" height="8" rx="2" fill="#8090a0"/>
+  <!-- Status LEDs -->
+  <circle cx="72" cy="155" r="4" fill="#22c55e" opacity="0.9"/>
+  <circle cx="85" cy="155" r="4" fill="#1d7ef5" opacity="0.7"/>
+  <circle cx="98" cy="155" r="4" fill="#F5C518" opacity="0.6"/>
+  <!-- WiFi symbol -->
+  <path d="M230 145 Q245 132 260 145" fill="none" stroke="#1d7ef5" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M235 151 Q245 141 255 151" fill="none" stroke="#1d7ef5" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="245" cy="156" r="2.5" fill="#1d7ef5" opacity="0.9"/>
+
+  <!-- Document auto-feeder on top -->
+  <rect x="270" y="20" width="65" height="18" rx="5" fill="#c8cdd6" filter="url(#cs)"/>
+  <rect x="275" y="23" width="55" height="9" rx="3" fill="#dde2ea"/>
+  <rect x="278" y="25" width="49" height="5" rx="2" fill="#fff" opacity="0.5"/>
+</svg>

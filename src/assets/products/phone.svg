@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="ph1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2f3e"/>
+      <stop offset="100%" stop-color="#1a1e2a"/>
+    </linearGradient>
+    <linearGradient id="ph2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a3040"/>
+      <stop offset="100%" stop-color="#251e30"/>
+    </linearGradient>
+    <linearGradient id="scr1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1525"/>
+      <stop offset="100%" stop-color="#070e1e"/>
+    </linearGradient>
+    <linearGradient id="scr2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0d2e"/>
+      <stop offset="100%" stop-color="#100820"/>
+    </linearGradient>
+    <filter id="phs"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow2"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+
+  <!-- Glow accents -->
+  <ellipse cx="145" cy="290" rx="60" ry="7" fill="#000" opacity="0.2"/>
+  <ellipse cx="275" cy="290" rx="55" ry="7" fill="#000" opacity="0.2"/>
+
+  <!-- Phone 1 (front, left) -->
+  <rect x="90" y="30" width="110" height="220" rx="18" fill="url(#ph1Grad)" filter="url(#phs)"/>
+  <!-- Screen -->
+  <rect x="96" y="46" width="98" height="190" rx="13" fill="url(#scr1)"/>
+  <!-- Notch/pill -->
+  <rect x="130" y="50" width="30" height="8" rx="4" fill="#0a0e1e"/>
+  <circle cx="151" cy="54" r="2.5" fill="#1d7ef5" opacity="0.7"/>
+  <!-- Status bar -->
+  <rect x="100" y="62" width="30" height="3" rx="1.5" fill="#fff" opacity="0.25"/>
+  <rect x="178" y="62" width="12" height="3" rx="1.5" fill="#fff" opacity="0.25"/>
+  <!-- App grid -->
+  <rect x="102" y="72" width="20" height="20" rx="6" fill="#1d7ef5" opacity="0.9"/>
+  <rect x="127" y="72" width="20" height="20" rx="6" fill="#7c3aed" opacity="0.9"/>
+  <rect x="152" y="72" width="20" height="20" rx="6" fill="#22c55e" opacity="0.9"/>
+  <rect x="177" y="72" width="14" height="20" rx="6" fill="#F5C518" opacity="0.9"/>
+  <rect x="102" y="98" width="20" height="20" rx="6" fill="#ec4899" opacity="0.9"/>
+  <rect x="127" y="98" width="20" height="20" rx="6" fill="#f97316" opacity="0.9"/>
+  <rect x="152" y="98" width="20" height="20" rx="6" fill="#1d7ef5" opacity="0.7"/>
+  <rect x="177" y="98" width="14" height="20" rx="6" fill="#7c3aed" opacity="0.7"/>
+  <!-- App icons detail -->
+  <circle cx="112" cy="82" r="5" fill="#fff" opacity="0.3"/>
+  <circle cx="137" cy="82" r="5" fill="#fff" opacity="0.3"/>
+  <circle cx="162" cy="82" r="5" fill="#fff" opacity="0.3"/>
+  <!-- Big widget -->
+  <rect x="102" y="125" width="89" height="50" rx="10" fill="#111d30"/>
+  <rect x="107" y="130" width="50" height="5" rx="2" fill="#fff" opacity="0.3"/>
+  <rect x="107" y="139" width="79" height="3" rx="1.5" fill="#1d7ef5" opacity="0.7"/>
+  <rect x="107" y="145" width="65" height="3" rx="1.5" fill="#1d7ef5" opacity="0.45"/>
+  <rect x="107" y="151" width="72" height="3" rx="1.5" fill="#7c3aed" opacity="0.5"/>
+  <rect x="107" y="157" width="55" height="3" rx="1.5" fill="#F5C518" opacity="0.5"/>
+  <rect x="107" y="163" width="68" height="3" rx="1.5" fill="#22c55e" opacity="0.45"/>
+  <!-- Camera module -->
+  <rect x="180" y="125" width="11" height="28" rx="5" fill="#0d1525"/>
+  <circle cx="185" cy="133" r="4" fill="#111d30"/>
+  <circle cx="185" cy="133" r="2.5" fill="#1a2840" stroke="#333" stroke-width="1"/>
+  <circle cx="185" cy="145" r="3" fill="#111d30"/>
+  <circle cx="185" cy="145" r="1.8" fill="#1a2840" stroke="#333" stroke-width="0.8"/>
+  <!-- Bottom bar -->
+  <rect x="127" y="228" width="40" height="4" rx="2" fill="#fff" opacity="0.3"/>
+  <!-- Side buttons -->
+  <rect x="86" y="90" width="4" height="20" rx="2" fill="#3a4050"/>
+  <rect x="86" y="116" width="4" height="28" rx="2" fill="#3a4050"/>
+  <rect x="200" y="100" width="4" height="24" rx="2" fill="#3a4050"/>
+
+  <!-- Phone 2 (back, right, tilted) -->
+  <g transform="rotate(12, 265, 155)">
+    <rect x="220" y="30" width="100" height="200" rx="18" fill="url(#ph2Grad)" filter="url(#phs)"/>
+    <!-- Camera island -->
+    <rect x="228" y="48" width="50" height="52" rx="10" fill="#1a1428"/>
+    <circle cx="248" cy="65" r="14" fill="#120e1e" stroke="#2a2030" stroke-width="2"/>
+    <circle cx="248" cy="65" r="9" fill="#0d0a18" stroke="#1a1428" stroke-width="1.5"/>
+    <circle cx="248" cy="65" r="5" fill="#1a1428"/>
+    <circle cx="250" cy="63" r="1.5" fill="#fff" opacity="0.4"/>
+    <circle cx="272" cy="65" r="10" fill="#120e1e" stroke="#2a2030" stroke-width="1.5"/>
+    <circle cx="272" cy="65" r="6" fill="#0d0a18"/>
+    <circle cx="274" cy="63" r="1.2" fill="#fff" opacity="0.35"/>
+    <rect x="245" y="90" width="38" height="5" rx="2.5" fill="#F5C518" opacity="0.7"/>
+    <rect x="250" y="97" width="28" height="3" rx="1.5" fill="#F5C518" opacity="0.4"/>
+    <!-- Apple/logo area -->
+    <circle cx="270" cy="160" r="15" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.08"/>
+    <!-- Back color sheen -->
+    <rect x="220" y="30" width="100" height="200" rx="18" fill="url(#scr2)" opacity="0.15"/>
+  </g>
+
+  <!-- Tablet (background) -->
+  <rect x="30" y="80" width="72" height="100" rx="8" fill="#1e2236" filter="url(#phs)" opacity="0.7"/>
+  <rect x="34" y="86" width="64" height="82" rx="5" fill="#0d1525"/>
+  <rect x="34" y="86" width="64" height="10" rx="5 5 0 0" fill="#0a0e1e"/>
+  <rect x="38" y="90" width="30" height="4" rx="2" fill="#fff" opacity="0.2"/>
+  <rect x="38" y="100" width="56" height="3" rx="1.5" fill="#1d7ef5" opacity="0.5"/>
+  <rect x="38" y="107" width="44" height="3" rx="1.5" fill="#7c3aed" opacity="0.4"/>
+  <rect x="38" y="114" width="50" height="3" rx="1.5" fill="#22c55e" opacity="0.4"/>
+  <rect x="38" y="121" width="38" height="3" rx="1.5" fill="#F5C518" opacity="0.4"/>
+  <circle cx="46" cy="150" r="12" fill="none" stroke="#1d7ef5" stroke-width="2" opacity="0.5"/>
+  <path d="M46 138 A12 12 0 0 1 58 150" fill="none" stroke="#F5C518" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

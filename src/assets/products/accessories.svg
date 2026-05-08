@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="kbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2f3e"/>
+      <stop offset="100%" stop-color="#1a1e2c"/>
+    </linearGradient>
+    <linearGradient id="mouseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e3448"/>
+      <stop offset="100%" stop-color="#1e2236"/>
+    </linearGradient>
+    <filter id="as"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <ellipse cx="170" cy="286" rx="140" ry="8" fill="#000" opacity="0.2"/>
+
+  <!-- Keyboard -->
+  <rect x="30" y="140" width="270" height="110" rx="10" fill="url(#kbGrad)" filter="url(#as)"/>
+  <!-- RGB strip along bottom -->
+  <rect x="30" y="238" width="270" height="12" rx="0 0 10 10" fill="#111520"/>
+  <rect x="35" y="239" width="30" height="9" rx="1" fill="#f97316" opacity="0.9"/>
+  <rect x="68" y="239" width="30" height="9" rx="1" fill="#F5C518" opacity="0.9"/>
+  <rect x="101" y="239" width="30" height="9" rx="1" fill="#22c55e" opacity="0.9"/>
+  <rect x="134" y="239" width="30" height="9" rx="1" fill="#1d7ef5" opacity="0.9"/>
+  <rect x="167" y="239" width="30" height="9" rx="1" fill="#7c3aed" opacity="0.9"/>
+  <rect x="200" y="239" width="30" height="9" rx="1" fill="#ec4899" opacity="0.9"/>
+  <rect x="233" y="239" width="30" height="9" rx="1" fill="#f97316" opacity="0.9"/>
+  <rect x="266" y="239" width="28" height="9" rx="1" fill="#F5C518" opacity="0.9"/>
+
+  <!-- Key rows - Row 1 (function keys) -->
+  <rect x="40" y="150" width="250" height="13" rx="3" fill="#222636"/>
+  <!-- Row 2 -->
+  <rect x="40" y="167" width="250" height="14" rx="3" fill="#222636"/>
+  <!-- Row 3 -->
+  <rect x="40" y="185" width="250" height="14" rx="3" fill="#222636"/>
+  <!-- Row 4 -->
+  <rect x="40" y="203" width="250" height="14" rx="3" fill="#222636"/>
+  <!-- Row 5 (bottom with spacebar) -->
+  <rect x="40" y="221" width="250" height="14" rx="3" fill="#222636"/>
+
+  <!-- Individual key details row 1 -->
+  <rect x="42" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="63" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="84" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="105" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="132" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="153" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="174" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="195" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="222" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="243" y="152" width="18" height="9" rx="2" fill="#2e3448"/>
+  <rect x="264" y="152" width="24" height="9" rx="2" fill="#2e3448"/>
+
+  <!-- Row 2 keys with RGB glow -->
+  <rect x="42" y="169" width="14" height="9" rx="2" fill="#1d7ef5" opacity="0.8" filter="url(#glow)"/>
+  <rect x="59" y="169" width="14" height="9" rx="2" fill="#7c3aed" opacity="0.8" filter="url(#glow)"/>
+  <rect x="76" y="169" width="14" height="9" rx="2" fill="#22c55e" opacity="0.8" filter="url(#glow)"/>
+  <rect x="93" y="169" width="14" height="9" rx="2" fill="#F5C518" opacity="0.8" filter="url(#glow)"/>
+  <rect x="110" y="169" width="14" height="9" rx="2" fill="#ec4899" opacity="0.8" filter="url(#glow)"/>
+  <rect x="127" y="169" width="14" height="9" rx="2" fill="#f97316" opacity="0.8" filter="url(#glow)"/>
+  <rect x="144" y="169" width="14" height="9" rx="2" fill="#1d7ef5" opacity="0.8" filter="url(#glow)"/>
+  <rect x="161" y="169" width="14" height="9" rx="2" fill="#7c3aed" opacity="0.8" filter="url(#glow)"/>
+  <rect x="178" y="169" width="14" height="9" rx="2" fill="#22c55e" opacity="0.8" filter="url(#glow)"/>
+  <rect x="195" y="169" width="14" height="9" rx="2" fill="#F5C518" opacity="0.8" filter="url(#glow)"/>
+  <rect x="212" y="169" width="14" height="9" rx="2" fill="#ec4899" opacity="0.8" filter="url(#glow)"/>
+  <rect x="229" y="169" width="14" height="9" rx="2" fill="#1d7ef5" opacity="0.8" filter="url(#glow)"/>
+  <rect x="246" y="169" width="14" height="9" rx="2" fill="#7c3aed" opacity="0.8" filter="url(#glow)"/>
+  <rect x="263" y="169" width="24" height="9" rx="2" fill="#f97316" opacity="0.8" filter="url(#glow)"/>
+
+  <!-- Row 3 -->
+  <rect x="42" y="187" width="20" height="9" rx="2" fill="#2e3448"/>
+  <rect x="65" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="82" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="99" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="116" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="133" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="150" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="167" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="184" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="201" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="218" y="187" width="14" height="9" rx="2" fill="#2e3448"/>
+  <rect x="235" y="187" width="52" height="9" rx="2" fill="#2e3448"/>
+
+  <!-- Spacebar -->
+  <rect x="95" y="223" width="120" height="9" rx="3" fill="#1d7ef5" opacity="0.6" filter="url(#glow)"/>
+
+  <!-- Mouse -->
+  <ellipse cx="340" cy="195" rx="35" ry="50" fill="url(#mouseGrad)" filter="url(#as)"/>
+  <!-- Left button -->
+  <path d="M308 180 Q308 155 340 155 L340 195 Z" fill="#252a3a"/>
+  <!-- Right button -->
+  <path d="M372 180 Q372 155 340 155 L340 195 Z" fill="#1e2236"/>
+  <!-- Scroll wheel -->
+  <rect x="333" y="162" width="14" height="20" rx="7" fill="#3a4060"/>
+  <rect x="335" y="164" width="10" height="16" rx="5" fill="#1d7ef5" opacity="0.7"/>
+  <!-- RGB side strip -->
+  <rect x="306" y="195" width="4" height="30" rx="2" fill="#7c3aed" opacity="0.8" filter="url(#glow)"/>
+  <rect x="370" y="195" width="4" height="30" rx="2" fill="#1d7ef5" opacity="0.8" filter="url(#glow)"/>
+  <!-- Mouse cable -->
+  <path d="M340 145 Q340 100 320 80 Q310 65 300 50" fill="none" stroke="#2e3448" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Headset (top right) -->
+  <path d="M50 50 Q80 20 140 20 Q200 20 230 50" fill="none" stroke="#2e3448" stroke-width="8" stroke-linecap="round" filter="url(#as)"/>
+  <!-- Left ear cup -->
+  <ellipse cx="50" cy="68" rx="22" ry="26" fill="#252a3a"/>
+  <ellipse cx="50" cy="68" rx="16" ry="20" fill="#1a1e2c"/>
+  <ellipse cx="50" cy="68" rx="10" ry="13" fill="#1d7ef5" opacity="0.2"/>
+  <!-- Right ear cup -->
+  <ellipse cx="230" cy="68" rx="22" ry="26" fill="#252a3a"/>
+  <ellipse cx="230" cy="68" rx="16" ry="20" fill="#1a1e2c"/>
+  <ellipse cx="230" cy="68" rx="10" ry="13" fill="#1d7ef5" opacity="0.2"/>
+  <!-- Mic boom -->
+  <path d="M28 80 Q10 100 15 120" fill="none" stroke="#2e3448" stroke-width="5" stroke-linecap="round"/>
+  <rect x="10" y="118" width="10" height="16" rx="5" fill="#252a3a"/>
+  <rect x="12" y="120" width="6" height="12" rx="3" fill="#1d7ef5" opacity="0.6"/>
+
+  <!-- Flash drive (floating) -->
+  <rect x="280" y="68" width="50" height="22" rx="4" fill="#252a3a" filter="url(#as)"/>
+  <rect x="326" y="73" width="10" height="12" rx="2" fill="#9aa0b0"/>
+  <rect x="284" y="72" width="20" height="14" rx="2" fill="#1d7ef5" opacity="0.8"/>
+  <circle cx="294" cy="79" r="3" fill="#1d7ef5" filter="url(#glow)"/>
+  <rect x="308" y="75" width="15" height="4" rx="2" fill="#3a4060"/>
+  <rect x="308" y="82" width="10" height="3" rx="1.5" fill="#3a4060"/>
+</svg>

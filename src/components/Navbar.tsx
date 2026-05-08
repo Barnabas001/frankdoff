@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
-interface NavbarProps { dark: boolean; onToggle: () => void }
+interface NavbarProps { dark?: boolean; onToggle: () => void }
 
-export default function Navbar({ dark, onToggle }: NavbarProps) {
+export default function Navbar({ onToggle }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50)
@@ -12,12 +16,22 @@ export default function Navbar({ dark, onToggle }: NavbarProps) {
     return () => window.removeEventListener('scroll', fn)
   }, [])
 
-  const links = [
-    { label: 'Products', href: '#products' },
-    { label: 'Services', href: '#services' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
+  const navLinks = [
+    { label: 'Products',   anchor: '#products' },
+    { label: 'Best Sellers', anchor: '#bestsellers' },
+    { label: 'Services',   anchor: '#services' },
+    { label: 'About',      anchor: '#about' },
+    { label: 'Contact',    anchor: '#contact' },
   ]
+
+  const handleAnchor = (anchor: string) => {
+    setMenuOpen(false)
+    if (isHome) {
+      document.querySelector(anchor)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/' + anchor)
+    }
+  }
 
   return (
     <nav
@@ -30,33 +44,32 @@ export default function Navbar({ dark, onToggle }: NavbarProps) {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-2.5">
+        <Link to="/" className="flex items-center gap-2.5">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm"
                style={{ background: 'var(--blue)' }}>F</div>
           <span className="font-bold text-base" style={{ color: 'var(--text-primary)' }}>
             Frankdoff <span style={{ color: 'var(--yellow)' }}>360</span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {links.map(l => (
-            <a key={l.label} href={l.href}
-               className="text-sm font-medium transition-colors duration-200 hover:opacity-100"
-               style={{ color: 'var(--text-secondary)' }}
+        <div className="hidden md:flex items-center gap-7">
+          {navLinks.map(l => (
+            <button key={l.label} onClick={() => handleAnchor(l.anchor)}
+               className="text-sm font-medium transition-colors duration-200"
+               style={{ color: 'var(--text-secondary)', background: 'none', border: 'none', cursor: 'pointer' }}
                onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
                onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}>
               {l.label}
-            </a>
+            </button>
           ))}
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          {/* Theme toggle */}
-          <button onClick={onToggle} className="theme-toggle" title="Toggle theme" aria-label="Toggle dark/light mode">
-            <span className="sr-only">{dark ? 'Switch to light' : 'Switch to dark'}</span>
+          <button onClick={onToggle} className="theme-toggle" title="Toggle theme" aria-label="Toggle theme" />
+          <button onClick={() => handleAnchor('#contact')} className="btn-primary text-sm">
+            Get a Quote →
           </button>
-          <a href="#contact" className="btn-primary text-sm">Get a Quote →</a>
         </div>
 
         {/* Mobile */}
@@ -75,15 +88,17 @@ export default function Navbar({ dark, onToggle }: NavbarProps) {
       {menuOpen && (
         <div className="md:hidden px-6 py-5 flex flex-col gap-4 border-t"
              style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border)' }}>
-          {links.map(l => (
-            <a key={l.label} href={l.href}
-               onClick={() => setMenuOpen(false)}
-               className="font-medium text-sm"
-               style={{ color: 'var(--text-secondary)' }}>
+          {navLinks.map(l => (
+            <button key={l.label} onClick={() => handleAnchor(l.anchor)}
+               className="font-medium text-sm text-left"
+               style={{ color: 'var(--text-secondary)', background: 'none', border: 'none', cursor: 'pointer' }}>
               {l.label}
-            </a>
+            </button>
           ))}
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="btn-primary w-fit">Get a Quote →</a>
+          <button onClick={() => handleAnchor('#contact')}
+             className="btn-primary w-fit">
+            Get a Quote →
+          </button>
         </div>
       )}
     </nav>
