@@ -1,4 +1,3 @@
-import accessImg from "../assets/products/accessories.svg";
 import hp1 from "../assets/products/laptops/hp1.jpg";
 import hp2 from "../assets/products/laptops/hp2.jpg";
 import hp3 from "../assets/products/laptops/hp3.jpg";
@@ -18,6 +17,11 @@ import printer2 from "../assets/products/printer/hpprinter.jpg";
 import photocopy from "../assets/products/photocopy/photocopy.jpg";
 import photocopy2 from "../assets/products/photocopy/photocopy2.jpg";
 import photocopy3 from "../assets/products/photocopy/photocopy3.jpg";
+import longitech from "../assets/products/accessories/longi1.jpg";
+import longitech2 from "../assets/products/accessories/longiHeadset.jpg";
+import samsungdrive from "../assets/products/accessories/samsungdrive.jpg";
+import hdmi from "../assets/products/accessories/HDMI.jpg";
+import usb from "../assets/products/accessories/USB-C.jpg";
 
 export interface Product {
   id: string;
@@ -740,7 +744,7 @@ const accessoryBrands: BrandGroup[] = [
           "7 Buttons",
           "Multi-device Support",
         ],
-        image: accessImg,
+        image: longitech,
         inStock: true,
       },
       {
@@ -757,7 +761,7 @@ const accessoryBrands: BrandGroup[] = [
           "Full-size Keyboard",
           "18-month Battery",
         ],
-        image: accessImg,
+        image: longitech,
         inStock: true,
       },
       {
@@ -774,7 +778,7 @@ const accessoryBrands: BrandGroup[] = [
           "Inline Audio Controls",
           "Plug & Play",
         ],
-        image: accessImg,
+        image: longitech2,
         inStock: true,
       },
     ],
@@ -798,7 +802,7 @@ const accessoryBrands: BrandGroup[] = [
           "Windows + Mac",
           "Plug & Play",
         ],
-        image: accessImg,
+        image: samsungdrive,
         inStock: true,
       },
     ],
@@ -822,7 +826,7 @@ const accessoryBrands: BrandGroup[] = [
           "100W PD Charging",
           "Plug & Play",
         ],
-        image: accessImg,
+        image: usb,
         inStock: true,
       },
       {
@@ -838,7 +842,7 @@ const accessoryBrands: BrandGroup[] = [
           "3 Metres",
           "For TV/Monitor/Laptop",
         ],
-        image: accessImg,
+        image: hdmi,
         inStock: true,
       },
     ],
@@ -901,7 +905,7 @@ export const categories: Category[] = [
     slug: "accessories",
     description:
       "Keyboards, mice, headsets, cables, flash drives and everything in between.",
-    image: accessImg,
+    image: longitech2,
     accentColor: "#f97316",
     icon: "🖱️",
     tagline: "Complete your setup with the right accessories.",
