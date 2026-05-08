@@ -3,7 +3,6 @@ import desktopImg from "../assets/products/desktop.svg";
 import printerImg from "../assets/products/printer.svg";
 import copierImg from "../assets/products/copier.svg";
 import accessImg from "../assets/products/accessories.svg";
-import phoneImg from "../assets/products/phone.svg";
 import hp1 from "../assets/products/laptops/hp1.jpg";
 import hp2 from "../assets/products/laptops/hp2.jpg";
 import hp3 from "../assets/products/laptops/hp3.jpg";
@@ -18,6 +17,8 @@ import mac2 from "../assets/products/laptops/mac2.jpg";
 import dell from "../assets/products/desktop/dell.jpg";
 import delldesktop2 from "../assets/products/desktop/dell2.jpg";
 import hpdesktop from "../assets/products/desktop/hpdesktop.jpg";
+import printer1 from "../assets/products/printer/hpprint.jpg";
+import printer2 from "../assets/products/printer/hpprinter.jpg";
 
 export interface Product {
   id: string;
@@ -479,7 +480,7 @@ const printerBrands: BrandGroup[] = [
           "USB + Ethernet",
           "Monthly Duty Cycle: 80,000",
         ],
-        image: printerImg,
+        image: printer1,
         inStock: true,
       },
       {
@@ -496,7 +497,7 @@ const printerBrands: BrandGroup[] = [
           "Duplex Printing",
           "Mobile Print Ready",
         ],
-        image: printerImg,
+        image: printer2,
         inStock: true,
       },
     ],
@@ -520,7 +521,7 @@ const printerBrands: BrandGroup[] = [
           "4800 x 1200 dpi",
           "Low Cost Per Page",
         ],
-        image: printerImg,
+        image: printer1,
         inStock: true,
       },
       {
@@ -537,7 +538,7 @@ const printerBrands: BrandGroup[] = [
           "USB + Network",
           "Paper Capacity: 250 sheets",
         ],
-        image: printerImg,
+        image: printer2,
         inStock: true,
       },
     ],
@@ -561,7 +562,7 @@ const printerBrands: BrandGroup[] = [
           "Ultra-Low Cost Printing",
           "Borderless Photo Print",
         ],
-        image: printerImg,
+        image: printer1,
         inStock: true,
       },
       {
@@ -578,7 +579,7 @@ const printerBrands: BrandGroup[] = [
           "Fax Capable",
           "10 ppm Black",
         ],
-        image: printerImg,
+        image: printer2,
         inStock: true,
       },
     ],
@@ -602,7 +603,7 @@ const printerBrands: BrandGroup[] = [
           "Up to 2400 dpi",
           "250-sheet Paper Tray",
         ],
-        image: printerImg,
+        image: printer1,
         inStock: true,
       },
     ],
@@ -845,157 +846,6 @@ const accessoryBrands: BrandGroup[] = [
   },
 ];
 
-/* ─── PHONES & TABLETS ───────────────────────────────────────────── */
-const phoneBrands: BrandGroup[] = [
-  {
-    brand: "Samsung",
-    logo: "SAMSUNG",
-    color: "#1428A0",
-    products: [
-      {
-        id: "sp-1",
-        name: "Samsung Galaxy A54",
-        brand: "Samsung",
-        category: "phones",
-        price: "₦320,000",
-        badge: "Best Seller",
-        specs: [
-          '6.4" Super AMOLED',
-          "Exynos 1380",
-          "8GB RAM / 128GB",
-          "50MP Triple Camera",
-          "5000mAh Battery",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-      {
-        id: "sp-2",
-        name: "Samsung Galaxy S23",
-        brand: "Samsung",
-        category: "phones",
-        price: "₦680,000",
-        badge: "Featured",
-        specs: [
-          '6.1" Dynamic AMOLED 2X',
-          "Snapdragon 8 Gen 2",
-          "8GB RAM / 128GB",
-          "50MP Main Camera",
-          "3900mAh Battery",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-    ],
-  },
-  {
-    brand: "Tecno",
-    logo: "TECNO",
-    color: "#E31E24",
-    products: [
-      {
-        id: "tp-1",
-        name: "Tecno Spark 20 Pro",
-        brand: "Tecno",
-        category: "phones",
-        price: "₦125,000",
-        badge: "Hot Deal",
-        specs: [
-          '6.78" AMOLED Display',
-          "Helio G99",
-          "8GB RAM / 256GB",
-          "108MP Camera",
-          "5000mAh + 33W Fast Charge",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-      {
-        id: "tp-2",
-        name: "Tecno Camon 20",
-        brand: "Tecno",
-        category: "phones",
-        price: "₦148,000",
-        badge: "Best Seller",
-        specs: [
-          '6.67" AMOLED',
-          "Helio G85",
-          "8GB RAM / 128GB",
-          "64MP Triple Camera",
-          "5000mAh Battery",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-    ],
-  },
-  {
-    brand: "Itel",
-    logo: "ITEL",
-    color: "#FF6B00",
-    products: [
-      {
-        id: "ip-1",
-        name: "Itel A70",
-        brand: "Itel",
-        category: "phones",
-        price: "₦55,000",
-        badge: "Best Seller",
-        specs: [
-          '6.6" HD+ Display',
-          "Unisoc T606",
-          "4GB RAM / 128GB",
-          "13MP Camera",
-          "5000mAh Battery",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-    ],
-  },
-  {
-    brand: "Kids Tablets",
-    logo: "📱",
-    color: "#8B5CF6",
-    products: [
-      {
-        id: "kt-1",
-        name: 'Kids Learning Tablet 7"',
-        brand: "Kids Tablets",
-        category: "phones",
-        price: "₦42,000",
-        badge: "Hot Deal",
-        specs: [
-          '7" HD Display',
-          "Android 12",
-          "Parental Controls",
-          "Educational Apps Pre-loaded",
-          "Drop-resistant Case",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-      {
-        id: "kt-2",
-        name: 'Kids Tablet 10" Pro',
-        brand: "Kids Tablets",
-        category: "phones",
-        price: "₦68,000",
-        badge: "New",
-        specs: [
-          '10" IPS Display',
-          "Android 13",
-          "2GB RAM / 32GB",
-          "Dual Camera",
-          "5000mAh Battery + Case",
-        ],
-        image: phoneImg,
-        inStock: true,
-      },
-    ],
-  },
-];
-
 /* ─── MASTER CATEGORIES ──────────────────────────────────────────── */
 export const categories: Category[] = [
   {
@@ -1058,18 +908,18 @@ export const categories: Category[] = [
     tagline: "Complete your setup with the right accessories.",
     brands: accessoryBrands,
   },
-  {
-    id: "phones",
-    name: "Phones & Tablets",
-    slug: "phones",
-    description:
-      "Smartphones, children pads and tablets at prices that work for every budget.",
-    image: phoneImg,
-    accentColor: "#06b6d4",
-    icon: "📱",
-    tagline: "Stay connected — the best phones at Lagos prices.",
-    brands: phoneBrands,
-  },
+  // {
+  //   id: "phones",
+  //   name: "Phones & Tablets",
+  //   slug: "phones",
+  //   description:
+  //     "Smartphones, children pads and tablets at prices that work for every budget.",
+  //   image: phoneImg,
+  //   accentColor: "#06b6d4",
+  //   icon: "📱",
+  //   tagline: "Stay connected — the best phones at Lagos prices.",
+  //   brands: phoneBrands,
+  // },
 ];
 
 /* ─── BEST SELLERS (cross-category, badge = 'Best Seller') ──────── */
