@@ -1,7 +1,3 @@
-import laptopImg from "../assets/products/laptop.svg";
-import desktopImg from "../assets/products/desktop.svg";
-import printerImg from "../assets/products/printer.svg";
-import copierImg from "../assets/products/copier.svg";
 import accessImg from "../assets/products/accessories.svg";
 import hp1 from "../assets/products/laptops/hp1.jpg";
 import hp2 from "../assets/products/laptops/hp2.jpg";
@@ -19,6 +15,9 @@ import delldesktop2 from "../assets/products/desktop/dell2.jpg";
 import hpdesktop from "../assets/products/desktop/hpdesktop.jpg";
 import printer1 from "../assets/products/printer/hpprint.jpg";
 import printer2 from "../assets/products/printer/hpprinter.jpg";
+import photocopy from "../assets/products/photocopy/photocopy.jpg";
+import photocopy2 from "../assets/products/photocopy/photocopy2.jpg";
+import photocopy3 from "../assets/products/photocopy/photocopy3.jpg";
 
 export interface Product {
   id: string;
@@ -631,7 +630,7 @@ const copierBrands: BrandGroup[] = [
           "1200 dpi",
           "Paper Capacity: 1,200 sheets",
         ],
-        image: copierImg,
+        image: photocopy,
         inStock: true,
       },
       {
@@ -648,7 +647,7 @@ const copierBrands: BrandGroup[] = [
           "Cloud Ready",
           "Smart Operation Panel",
         ],
-        image: copierImg,
+        image: photocopy2,
         inStock: true,
       },
     ],
@@ -672,7 +671,7 @@ const copierBrands: BrandGroup[] = [
           "600 x 600 dpi",
           "Paper Capacity: 250 sheets",
         ],
-        image: copierImg,
+        image: photocopy3,
         inStock: true,
       },
       {
@@ -689,7 +688,7 @@ const copierBrands: BrandGroup[] = [
           "Cloud + WiFi",
           "Finishing Options",
         ],
-        image: copierImg,
+        image: photocopy,
         inStock: false,
       },
     ],
@@ -713,7 +712,7 @@ const copierBrands: BrandGroup[] = [
           "600 dpi",
           "Duplex Standard",
         ],
-        image: copierImg,
+        image: photocopy2,
         inStock: true,
       },
     ],
@@ -854,7 +853,7 @@ export const categories: Category[] = [
     slug: "laptops",
     description:
       "Browse our full range of laptops from the world's top brands. New and fairly used options available.",
-    image: laptopImg,
+    image: hp1,
     accentColor: "#1d7ef5",
     icon: "💻",
     tagline: "Work, study, create — find the perfect laptop.",
@@ -866,7 +865,7 @@ export const categories: Category[] = [
     slug: "desktops",
     description:
       "Complete desktop setups for home, office, and power users. Towers, all-in-ones and mini PCs.",
-    image: desktopImg,
+    image: hpdesktop,
     accentColor: "#7c3aed",
     icon: "🖥️",
     tagline: "Power your workspace with the right desktop.",
@@ -878,7 +877,7 @@ export const categories: Category[] = [
     slug: "printers",
     description:
       "Inkjet, laser, and multifunction printers for every need and budget. All major brands in stock.",
-    image: printerImg,
+    image: printer2,
     accentColor: "#22c55e",
     icon: "🖨️",
     tagline: "Print smarter — great quality, great value.",
@@ -890,7 +889,7 @@ export const categories: Category[] = [
     slug: "copiers",
     description:
       "Office-grade photocopiers for high-volume environments. We also supply toner cartridges & consumables.",
-    image: copierImg,
+    image: photocopy,
     accentColor: "#F5C518",
     icon: "📠",
     tagline: "High-volume office copying made affordable.",
@@ -908,18 +907,6 @@ export const categories: Category[] = [
     tagline: "Complete your setup with the right accessories.",
     brands: accessoryBrands,
   },
-  // {
-  //   id: "phones",
-  //   name: "Phones & Tablets",
-  //   slug: "phones",
-  //   description:
-  //     "Smartphones, children pads and tablets at prices that work for every budget.",
-  //   image: phoneImg,
-  //   accentColor: "#06b6d4",
-  //   icon: "📱",
-  //   tagline: "Stay connected — the best phones at Lagos prices.",
-  //   brands: phoneBrands,
-  // },
 ];
 
 /* ─── BEST SELLERS (cross-category, badge = 'Best Seller') ──────── */
